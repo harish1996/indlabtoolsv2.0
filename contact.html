@@ -1,0 +1,86 @@
+<html>
+<head>
+	<title>
+		Indlabtools
+	</title>
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.js"
+	integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+	crossorigin="anonymous"></script>
+	<!-- Jquery CDN-->
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--Bootstrap CSS CDN-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!--Bootstrap JS CDN-->
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<!--Custom style CSS-->
+	<script src="js/jquery.loadie.js"></script>
+	<link rel="stylesheet" href="css/loadie.css">
+	<!--Loadie  import-->
+	<link href="https://fonts.googleapis.com/css?family=Bubbler+One|Indie+Flower|Lobster|Mogra|Vibur|Julius+Sans+One" rel="stylesheet">
+	<!-- Font import link-->
+	<script>
+		$(document).ready(function(){
+			var totalImages	= $(".sliderImage").size();
+			var imagesLoaded=0;
+			$('body').loadie();
+			$(".sliderImage").on("load", function(){
+				$(this).show();
+
+				imagesLoaded++;
+				$('body').loadie(imagesLoaded / totalImages);
+
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<div class="newNav">
+		<ul class="nav nav-pills">
+			<li><a class="logo1 navbar-brand" href="#"><img class="logo img-responsive" src="images/logo/indlogo1.jpg" alt="Image didnot load"></a></li>
+			<li class="pull-right "><a  class="active" href="contact.html" id="button1" role="button">Contact</a></li>
+			<li class="pull-right"><a href="products.html" role="button">Products</a></li>
+			<li class="pull-right"><a href="aboutUs.html" role="button">About Us</a></li>
+			<li class="pull-right"><a href="index.html" role="button">Home</a></li>
+		</ul>
+	</div>
+	<div class="contactImage">
+		<p class="contactText">Contact Us</p>
+	</div>
+	<p class="contactHead">Have a question?</p><br>
+	<h2 class="getInTouch">Get in touch with us!
+	</h2>
+	<div class="formStuff">
+		<form action="/action_page.php">
+			<div class="form-group">
+				<label for="firstName">*First Name:</label>
+				<input type="text" class="form-control" id="firstName" placeholder="Your First Name" name="firstName" required>
+			</div>
+			<div class="form-group">
+				<label for="lastName">*Last Name:</label>
+				<input type="text" class="form-control" id="lastName" placeholder="Your Last Name" name="email" required>
+			</div>
+			<div class="form-group">
+				<label for="email">*Email:</label>
+				<input type="email" class="form-control" id="email" placeholder="Enter your mail id " name="email" required>
+			</div>
+			<div class="form-group">
+				<label for="mobileNumber">*Mobile Number:</label>
+				<input type="text" class="form-control" id="mobileNumber" placeholder="Enter Mobile Number" name="mobileNumber" required>
+			</div>
+			
+			<button align="center" type="submit" class="btn btn-default" required>Submit</button>
+		</form>
+	</div>
+	<div class="footer1">
+		<div class="row">
+			<div class="col-md-3"><h3>IndLabTools</h3><br>
+				<p>A distributor of biomedical devices</p>
+			</div>
+			<div class="col-md-5"><p class="powered">Powered by Pied Piper</p></div>
+		</div>
+	</div>
+</body>
+</html>

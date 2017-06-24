@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>
+		Indlabtools
+	</title>
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.js"
+	integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+	crossorigin="anonymous"></script>
+	<!-- Jquery CDN-->
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--Bootstrap CSS CDN-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!--Bootstrap JS CDN-->
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<!--Custom style CSS-->
+	<script src="js/jquery.loadie.js"></script>
+	<link rel="stylesheet" href="css/loadie.css">
+	<!--Loadie  import-->
+	<link href="https://fonts.googleapis.com/css?family=Bubbler+One|Indie+Flower|Lobster|Mogra|Vibur|Playfair+Display|Abril+Fatface|Julius+Sans+One" rel="stylesheet">
+	<!-- Font import link-->
+	<script>
+		$(document).ready(function(){
+			var totalImages	= $(".sliderImage").size();
+			var imagesLoaded=0;
+			$('body').loadie();
+			$(".sliderImage").on("load", function(){
+				$(this).show();
+
+				imagesLoaded++;
+				$('body').loadie(imagesLoaded / totalImages);
+
+			});
+
+		});
+	</script>
+</head>
+<body>
+	<div class="newNav">
+		<ul class="nav nav-pills">
+			<li><a class="logo1 navbar-brand" href="#"><img class="logo img-responsive" src="images/logo/indlogo1.jpg" alt="Image didnot load"></a></li>
+			<li class="pull-right"><a href="contact.html" id="button1" role="button">Contact</a></li>
+			<li class="pull-right"><a href="products.html" role="button">Products</a></li>
+			<li class="pull-right"><a class="active" href="aboutUs.html" role="button">About Us</a></li>
+			<li class="pull-right"><a href="index.html" role="button">Home</a></li>
+		</ul>
+	</div>
+	<div class="mainAbout align-center">
+		<h1 class="genInfo">Who we are
+		</h1><br>
+
+		<p>Industrial & Laboratory Tools Corporation “INDLABTOOLS” was formed in the year 1987 as a partnership Firm, registered under Indian Partnership Act.
+
+			"INDLABTOOLS" is based in Ashok Nagar, Chennai. Chennai being an industrial hub, has always thrown lucrative opportunities to investors and entrepreneurs. Lots of Automobile Industries, Food Industries and Medical & Health related units are coming up. Besides Tamil Nadu, our home state, the neighboring states – Andhra Pradesh, Telangana, Karnataka, Goa and Pondicherry, are concentrating on industrial growth in general, and in the area of Pharmaceutical, Biotechnology, Chemical and Food Industry in particular. We foresee positive response for our products in these areas. Present activity -Assembling and Marketing Scientific Lab Equipment in South India . Range of products marketed- All types of Heating equipment, Cooling Equipment, Analytical Instruments, Animal House Equipment, Custom Built Instruments and Lab Furniture.
+		</p>
+	</div>
+	<div class="footer1">
+		<div class="row">
+			<div class="col-md-3"><h3>IndLabTools</h3><br>
+				<p>A distributor of biomedical devices</p>
+			</div>
+			<div class="col-md-5"><p class="powered">Powered by Pied Piper</p></div>
+		</div>
+	</div>	
+</body>
+</html>
