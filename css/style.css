@@ -5,17 +5,19 @@ body{
 	background-color: #3D5265;
 }
 
-ul.nav .logo1:hover{background-color:#EB6E80;}
+ul.nav .logo1:hover{background-color: #764A99;}
 /*.nav .active {background-color: cyan;}*/
-.newnav{
+.newNav{
 	padding-top:50px;
-	background-color: #5CB02F;/*red#D5394A*/;/*#b56357;*/
+	background-color: #764A99;/*red#D5394A*/;/*#b56357;*/
 	font-family: lobster;
 	font-size:2em;
 	background-size: cover;
+	border-width: 0px;
+	z-index: 1;
 }
 
-.logo{
+.Logo{
 	margin-top: -45px;
 	max-width: 250%;
 	max-height: 250%;
@@ -85,13 +87,13 @@ h1{
 }
 .productContent{
 	padding:20px 100px 20px 100px;
-	font-size: 2em;
+	font-size: 1em;
 	font-family: Ubuntu!important;
 	color:#FFFFFF;
 }
 .productTitle{
 	padding:20px 100px 20px 100px;
-	font-size:3em;
+	font-size:1em;
 	font-family: Indie Flower;
 	color:#FFFFFF;
 }
@@ -146,4 +148,18 @@ label{
 	font-family: Julius Sans One;
 	font-size: 2em;
 
+}
+.mainProductContent{
+	margin-left: 15%;
+}
+.affix{
+	top: 0;
+	width: 100%;
+}
+#affix2.affix-top{
+/*margin-top: 120px;*/
+}
+#affix2.affix{
+margin-top: 120px;
+width:200px;
 }
