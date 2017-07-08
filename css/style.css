@@ -7,6 +7,12 @@ body{
 
 ul.nav .logo1:hover{background-color: #764A99;}
 /*.nav .active {background-color: cyan;}*/
+nav.sidebar{
+	position:fixed;
+	overflow:scroll;
+	top:0;
+	bottom:0;	
+}
 div.sides{
 	width: 300px;
 }
@@ -38,7 +44,7 @@ a{
 }
 .content{
 	margin-top: -20px;
-	
+	position: relative;	
 	background-size: cover;
 	height: 900px;
 	margin-top: -10%;
@@ -174,9 +180,15 @@ background-color: #203677;
 
 }
 .sidebar{
+	position:fixed;
+	width:150px;
+	overflow-y:scroll;
+	top:0;
+	bottom:0;
 	margin-top: -20px;
 	/*background-color: #203677;*/
 	font-family: Josefin Sans;
+	font-size: 16px;
 	font-weight: bold;
 
 }
