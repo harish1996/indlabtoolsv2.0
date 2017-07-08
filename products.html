@@ -98,6 +98,24 @@
 		top: 50%;
 		left: 50%;
 	}
+	.sidelink:hover{
+		background-color: gray;
+	}
+	.link:hover{
+		color: red;
+		text-decoration: none;
+		font-size: 120%;
+	}
+	.link{
+		overflow: hidden;
+	}
+	.link:active{
+		color:pink;
+		background-color: inherit;
+	}
+	.sidelink:active{
+		background-color: inherit;
+	}
 </style>
 </head>
 <body >
@@ -119,8 +137,8 @@
 		<div class="col-md-2 sidebar">
 			<nav>
 				<ul id="affix2" class="nav nav-pills nav-stacked " data-spy="affix" data-offset-top="-5" >
-				<div ng-repeat="x in a">
-					<li class="sides"> <a href="#{{ unit_name[x].split(' ').join('') }}"> {{ unit_name[x] }}</a></li>
+				<div ng-repeat="x in a" class="sidelink">
+					<li class="sides"> <a href="#{{ unit_name[x].split(' ').join('') }}" class="link"> {{ unit_name[x] }}</a></li>
 				</div>
 					</ul>
 			</nav>
